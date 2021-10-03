@@ -79,7 +79,7 @@ It will open UDP port, create work queue, and start processing incoming packets 
 
 ## Examples
 
-Example UDP is availeble in /examples folder. Compile it with 'make examples' (or make examples-debug).
+Example UDP is availeble in /examples folder (file e_example_udp.c). Compile it with 'make examples' (or make examples-debug).
 
 
 Run example:
@@ -99,8 +99,8 @@ or (debug version):
 Send some data and enjoy:
 
 ```
-echo -n "hello" >/dev/udp/localhost/33226
-echo -n "123456" >/dev/udp/localhost/33226
+echo -n "hello" >/dev/udp/127.0.0.1/33226
+echo -n "123456" >/dev/udp/127.0.0.1/33226
 ```
 
 You will see it getting processed:
@@ -141,7 +141,7 @@ make uninstall			-> remove library from /lib and headers from /usr/local/include
 
 ## Contribute
 
-Please submit any issues [here](https://github.com/dataandsignal/libendpoint/issues).
+In case of any issues, please submit them [here](https://github.com/dataandsignal/libendpoint/issues).
 
 All contributions are welcome, please submit PRs [here](https://github.com/dataandsignal/libendpoint/pulls).
 
