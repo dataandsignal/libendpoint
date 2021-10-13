@@ -185,7 +185,7 @@ int e_udp_loop(e_udp_t *udp)
 
 		CD_LOG_INFO("recvfrom %ld bytes (UDP) - from: %s", bytes_n, buf);
 
-		m = e_msg_create(buf, bytes_n);
+		m = e_msg_create(msg, bytes_n);
 		if (!m) {
 			CD_LOG_ERR("Cannot allocate memory for UDP message");
 			return -1;
